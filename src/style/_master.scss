@@ -1,0 +1,25 @@
+[data-theme='light'] {
+    --bgColor: rgb(245, 245, 245);
+    --txtColor: rgb(34, 34, 34);
+
+    --navColor: #e0e0e0;
+
+    --highlightColour: #008b8b;
+
+    --bgOpacity: 0.5;
+
+    --pictureOverlay: rgba(245, 245, 245, 0.5);
+}
+
+[data-theme='dark'] {
+    --bgColor: #222;
+    --txtColor: #f5f5f5;
+
+    --navColor: #333;
+
+    --highlightColour: #00b6b6;
+
+    --bgOpacity: 0.3;
+
+    --pictureOverlay: rgba(34, 34, 34, 0.9);
+}
