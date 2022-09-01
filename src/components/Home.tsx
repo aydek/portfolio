@@ -1,5 +1,6 @@
 import '../style/Home.scss';
 
+
 export const Home = () => {
     return (
         <div className="home__body section" id="home">
@@ -15,6 +16,7 @@ export const Home = () => {
                 <br></br>
                 <div>Let's scroll down to see more!</div>
             </div>
+      
         </div>
     );
 };

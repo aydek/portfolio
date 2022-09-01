@@ -10,7 +10,7 @@
 
     --pictureOverlay: rgba(245, 245, 245, 0.5);
 
-    --svgFilter: invert(0%) sepia(24%) saturate(154%) hue-rotate(150deg) brightness(111%) contrast(73%);
+    --svgFilter: invert(100%) sepia(4%) saturate(160%) hue-rotate(272deg) brightness(114%) contrast(92%);
 }
 
 [data-theme='dark'] {
@@ -24,6 +24,5 @@
     --bgOpacity: 0.3;
 
     --pictureOverlay: rgba(34, 34, 34, 0.9);
-
-    --svgFilter: invert(100%) sepia(4%) saturate(160%) hue-rotate(272deg) brightness(114%) contrast(92%);
+    --svgFilter: invert(0%) sepia(24%) saturate(154%) hue-rotate(150deg) brightness(111%) contrast(73%);
 }
