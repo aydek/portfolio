@@ -1,12 +1,92 @@
 .contacts__body {
     height: 100vh;
     display: flex;
-    align-items: center ;
+    justify-content: center;
+    flex-direction: column;
+
     .text {
         margin-left: 5vw;
+        margin-right: 5vw;
         position: relative;
 
-        font-size: clamp(0.1rem, 3vw + 0.1rem, 1.5rem);
+        font-size: 1rem;
         text-shadow: 0px 0px 5px var(--bgColor);
+
+        .big {
+            font-size: clamp(0.1rem, 7vw + 0.1rem, 3rem);
+        }
+    }
+}
+
+.contacts__button__group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-block: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--txtColor);
+    background-color: var(--bgColor);
+    user-select: none;
+    box-shadow: 0px 0px 5px var(--highlightColour);
+    border: 1px solid var(--highlightColour);
+    width: 300px;
+    height: 50px;
+    cursor: pointer;
+
+    @media (max-width: 400px) {
+        width: 100%;
+    }
+
+    &:hover {
+        animation: buttonHover 300ms ease forwards;
+    }
+
+    .button__left {
+        width: 60px;
+        height: 100%;
+        background-color: rgba($color: #555, $alpha: 0.2);
+        display: grid;
+        place-items: center;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-right: 1px solid var(--highlightColour);
+    }
+
+    .button__right {
+        text-align: center;
+        width: 60px;
+        height: 100%;
+        padding-inline: 10px;
+        background-color: rgba($color: #555, $alpha: 0.2);
+        display: grid;
+        place-items: center;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-left: 1px solid var(--highlightColour);
+    }
+
+    &.copied {
+        &::before {
+            display: grid;
+        }
+    }
+
+    &::before {
+        content: 'Copied to clipboard...';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: none;
+        place-items: center;
+        background-color: var(--bgColor);
+        border-radius: 5px;
+    }
+}
+
+@keyframes buttonHover {
+    to {
+        box-shadow: none;
     }
 }
