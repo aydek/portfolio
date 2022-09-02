@@ -26,12 +26,15 @@ body {
 
 .vector {
     filter: var(--svgFilter);
-    width: 500px;
-    height: 500px;
-    margin-bottom: -200px;
-    margin-top: -300px;
+    width: 50vw;
+    height: 50vh;
+    position: absolute;
+    margin-top: -30vh;
     @media (max-width: 500px) {
         width: 100%;
+    }
+    path {
+        opacity: 0;
     }
 }
 
