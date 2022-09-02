@@ -28,8 +28,7 @@ body {
     filter: var(--svgFilter);
     width: 50vw;
     height: 50vh;
-    position: absolute;
-    margin-top: -30vh;
+
     @media (max-width: 500px) {
         width: 100%;
     }
