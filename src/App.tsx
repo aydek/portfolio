@@ -14,7 +14,7 @@ function App() {
             <Home />
             <Vector1 anchor="#home" id="vector1" height="60vh" mt="-35vh" />
             <About />
-            <Vector1 anchor="#about" id="vector2" height="40vh" mt="-25vh" />
+            <Vector1 anchor="#about" id="vector2" height="50vh" mt="-25vh" />
             <Contacts />
             <Footer />
         </ThemeProvider>
