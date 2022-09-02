@@ -36,7 +36,7 @@ function ThemeProvider(props: { children: ReactNode }) {
 
         if (body) {
             if (isSmallScreen) body.style.backgroundPosition = '0px 0px';
-            else body.style.backgroundPosition = `${100 - mousex / 3 / (window.innerWidth / 15)}% ${mousey / 3 / (window.innerHeight / 30)}px`;
+            else body.style.backgroundPosition = `${100 - mousex / 3 / (window.innerWidth / 15)}% ${mousey / 3 / (window.innerHeight / 50)}px`;
         }
     };
 
