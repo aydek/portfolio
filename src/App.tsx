@@ -11,8 +11,9 @@ function App() {
         <ThemeProvider>
             <Nav />
             <Home />
-            <Vector1 />
+            <Vector1 anchor="#home" id="vector1" />
             <About />
+            <Vector1 anchor="#about" id="vector2" />
             <Contacts />
         </ThemeProvider>
     );
