@@ -4,7 +4,7 @@ import { Home } from './components/Home';
 import { About } from './components/About';
 import { Nav } from './components/Nav';
 import { Contacts } from './components/Contacts';
-import { Vector1 } from './components/Vector1';
+import { Vector1 } from './components/Vector';
 
 function App() {
     return (
