@@ -1,11 +1,11 @@
 .contacts__body {
     height: 100vh;
-
+    display: flex;
+    align-items: center ;
     .text {
         margin-left: 5vw;
         position: relative;
-        top: 50%;
-        transform: translateY(-50%);
+
         font-size: clamp(0.1rem, 3vw + 0.1rem, 1.5rem);
         text-shadow: 0px 0px 5px var(--bgColor);
     }
