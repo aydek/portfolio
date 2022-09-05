@@ -32,7 +32,7 @@ function ThemeProvider(props: { children: ReactNode }) {
 
         const mousex = event.clientX;
         const mousey = event.clientY;
-        const body = document.getElementById('body');
+        const body = document.getElementById('background__fix');
 
         if (body) {
             if (isSmallScreen) body.style.backgroundPosition = '0px 0px';
@@ -61,6 +61,7 @@ function ThemeProvider(props: { children: ReactNode }) {
 
     return (
         <div className="body" id="body" data-theme={theme} style={{ width: '100%', height: '100%' }}>
+            <div id='background__fix'></div>
             <div onClick={handleClick} style={containerStyle}>
                 <MoonIcon style={iconStyle} width={26} height={26} />
             </div>
