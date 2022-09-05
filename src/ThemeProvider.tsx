@@ -61,7 +61,7 @@ function ThemeProvider(props: { children: ReactNode }) {
 
     return (
         <div className="body" id="body" data-theme={theme} style={{ width: '100%', height: '100%' }}>
-            <div id='background__fix'></div>
+            <div id="background__fix"></div>
             <div onClick={handleClick} style={containerStyle}>
                 <MoonIcon style={iconStyle} width={26} height={26} />
             </div>
