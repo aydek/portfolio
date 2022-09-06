@@ -11,9 +11,9 @@ export const Nav = () => {
             (entries) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        if (entry.target.classList.value.includes('home')) setNavIndex(0);
-                        if (entry.target.classList.value.includes('about')) setNavIndex(1);
-                        if (entry.target.classList.value.includes('contacts')) setNavIndex(2);
+                        if (entry.target.classList.value.includes('home')) entry.target.classList.add('active'), setNavIndex(0);
+                        if (entry.target.classList.value.includes('about')) entry.target.classList.add('active'), setNavIndex(1);
+                        if (entry.target.classList.value.includes('contacts')) entry.target.classList.add('active'), setNavIndex(2);
                     }
                 });
             },
