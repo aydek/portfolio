@@ -50,6 +50,7 @@ body {
 
     animation: start_anim 1s ease-in forwards;
     animation-delay: 1.5s;
+    pointer-events: none;
 }
 
 @keyframes start_anim {
