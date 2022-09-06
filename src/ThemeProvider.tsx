@@ -53,7 +53,7 @@ function ThemeProvider(props: { children: ReactNode }) {
         top: isSmallScreen ? '' : '0.8rem',
         bottom: isSmallScreen ? '0.8rem' : '',
         width: 'max-content',
-        zIndex: '99',
+        zIndex: '1',
     } as React.CSSProperties;
 
     const handleClick = () => {
